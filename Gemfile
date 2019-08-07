@@ -49,3 +49,4 @@ end
 
 gem 'devise', '~> 4.4'
 gem 'pry'
+gem "paperclip", "~> 6.0.0"
