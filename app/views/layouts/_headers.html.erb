@@ -1,0 +1,28 @@
+<!--Page header -->
+<div class="page-header page-header-light">
+	<div class="page-header-content header-elements-md-inline">
+		<div class="page-title d-flex">
+			<!-- <img src="/assets/placeholder.jpg" style="height:100; width:10%" alt=""> -->
+			<h4><span class="font-weight-semibold">ARTIST</span> - Manager</h4>
+			<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
+		</div>
+		<% if user_signed_in? %>
+
+		<div class="header-elements d-none">
+			<div class="d-flex justify-content-center">
+				<a href="#" class="btn btn-link btn-float text-default"><span>Welcome - <b><%= current_user.name%></b> </span></a>
+				<a href="/users/sign_out" class="btn btn-link btn-float text-default" data-method="delete"><span>Sign Out</span></a>
+			</div>
+		</div>					
+		<% else %>
+		<div class="header-elements d-none">
+			<div class="d-flex justify-content-center">
+				<a href="#" class="btn btn-link btn-float text-default ml-auto" data-toggle="modal" data-target="#modal_default"><span>SignIn</span></a>
+			</div>
+		</div>					
+		<% end %>
+
+
+	</div>	
+</div>
+<!-- /page header --> 

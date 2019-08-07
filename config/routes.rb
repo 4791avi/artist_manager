@@ -1,4 +1,21 @@
 Rails.application.routes.draw do
+  get 'home/index'
+
+  devise_for :users
+ 
+  devise_scope :user do
+    authenticated :user do
+   
+       get '/users/sign_out' => 'devise/sessions#destroy'
+       # root 'home#dashboard', as: :authenticated_root
+       root 'devise/registrations#edit', as: :authenticated_root
+    end
+    unauthenticated do
+      # root to: "home#index", as: :unauthenticated_root
+      root 'devise/sessions#new', as: :unauthenticated_root
+    end
+  end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -10,6 +10,13 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require jquery.min
+//= require bootstrap.bundle.min
+//= require blockui.min
+//= require app
+//= require select2.min
+//= require uniform.min
+//= require form_layouts
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
