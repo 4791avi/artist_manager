@@ -123,27 +123,27 @@
                         <%= devise_error_messages! %>
                         <div class="form-group request">
                             <label>Name:</label>
-                            <input type="text" class="form-control" name="user[name]" placeholder="Name" value="<%=  resource.name || '' %>">
+                            <input type="text" class="form-control" name="user[name]" placeholder="Name" required value="<%=  resource.name || '' %>">
                         </div>
                         <div class="form-group">
                             <label>Email:</label>
-                            <input type="text" class="form-control" name="user[email]" placeholder="Email" value="<%= resource.email || '' %>">
+                            <input type="text" class="form-control" name="user[email]" placeholder="Email" required value="<%= resource.email || '' %>">
                         </div>
                         <div class="form-group">
                             <label>Phone:</label>
-                            <input type="text" class="form-control" name="user[phone]" placeholder="Phone" value="<%= resource.phone || '' %>">
+                            <input type="text" class="form-control" name="user[phone]" placeholder="Phone" required value="<%= resource.phone || '' %>">
                         </div>
                         <div class="form-group">
                             <label>City:</label>
-                            <input type="text" class="form-control" name="user[city]" placeholder="City" value="<%= resource.city || '' %>">
+                            <input type="text" class="form-control" name="user[city]" placeholder="City" required value="<%= resource.city || '' %>">
                         </div>
                         <div class="form-group">
                             <label>Country:</label>
-                            <input type="text" class="form-control" name="user[country]" placeholder="Country" value="<%= resource.country || '' %>">
+                            <input type="text" class="form-control" name="user[country]" placeholder="Country" required value="<%= resource.country || '' %>">
                         </div>
                         <div class="form-group">
                             <label>Username:</label>
-                            <input type="text" class="form-control" name="user[username]" placeholder="Username" value="<%= resource.username || '' %>">
+                            <input type="text" class="form-control" name="user[username]" placeholder="Username" required value="<%= resource.username || '' %>">
                         </div>
                         <div class="form-group">
                             <label>New Password:</label>
@@ -151,10 +151,10 @@
                         </div>
                         <div class="form-group row">
                             <label>About:</label>
-                            <textarea rows="5" cols="5" class="form-control" name="user[about]" placeholder="Enter your message here"><%= resource.about || '' %></textarea>
+                            <textarea rows="5" cols="5" class="form-control" name="user[about]" required placeholder="Enter your message here"><%= resource.about || '' %></textarea>
                         </div>
                         <div class="form-group">
-                            <button type="submit" class="btn btn-primary btn-block">Save <i class="icon-circle-right2 ml-2"></i></button>
+                            <button type="submit" class="btn btn-primary btn-block">Save</i></button>
                         </div>
                         <% end %>
                     </div>
@@ -176,7 +176,7 @@
                         <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put, multipart: true }) do |f| %>
                         <%= devise_error_messages! %>
                         <div class="form-group request">
-                            <div class="uniform-uploader"><input type="file" name="user[avatar]" class="form-input-styled" data-fouc=""><span class="filename" style="user-select: none;">No file selected</span><span class="action btn bg-pink-400" style="user-select: none;">Choose File</span></div>
+                            <div class="uniform-uploader"><input type="file" name="user[avatar]" required class="form-input-styled" data-fouc=""><span class="filename" style="user-select: none;">No file selected</span><span class="action btn bg-pink-400" style="user-select: none;">Choose File</span></div>
                         </div>
                         <div class="form-group">
                             <button type="submit" class="btn btn-primary btn-block">Upload</button>
@@ -200,7 +200,7 @@
                     <div class="card-body">
                         <%= form_for @painting, url: home_index_path, html: {method: :post, multipart: true } do |form| %>
                         <div class="form-group request">
-                            <div class="uniform-uploader"><input type="file" name="painting[picture]" class="form-input-styled" data-fouc=""><span class="filename" style="user-select: none;">No file selected</span><span class="action btn bg-pink-400" style="user-select: none;">Choose File</span></div>
+                            <div class="uniform-uploader"><input type="file" name="painting[picture]" required class="form-input-styled" data-fouc=""><span class="filename" style="user-select: none;">No file selected</span><span class="action btn bg-pink-400" style="user-select: none;">Choose File</span></div>
                         </div>
                         <div class="form-group">
                             <button type="submit" class="btn btn-primary btn-block">Upload</button>
