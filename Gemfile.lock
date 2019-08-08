@@ -96,7 +96,7 @@ GEM
       mime-types
       mimemagic (~> 0.3.0)
       terrapin (~> 0.6.0)
-    pg (1.1.4)
+    pg (0.21.0)
     pry (0.12.2)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
@@ -188,7 +188,7 @@ DEPENDENCIES
   jquery-rails
   mysql2 (~> 0.4.5)
   paperclip (~> 6.0.0)
-  pg
+  pg (~> 0.20)
   pry
   rails (= 4.2.10)
   sass-rails (~> 5.0)
