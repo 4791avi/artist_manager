@@ -7,9 +7,8 @@
              <%= image_tag(usr.avatar.url(:medium), :size => "420x200") %>
             </div>
 
-            <div class="card-body">
-              <h6 class="font-weight-semibold"><%= usr.name %></h6>
-              <%= link_to usr.name, home_painting_path(user_id: usr.id) %>
+            <div class="card-body text-center">
+              <h6 class="font-weight-semibold"> <%= link_to usr.name, home_painting_path(user_id: usr.id) %></h6>
             </div>
           </div>
         </div>

@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'home/painting'
+  post 'home/make_public'
   resources :home
   # devise_for :users
   devise_for :users, controllers: {
