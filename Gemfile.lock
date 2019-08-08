@@ -96,7 +96,7 @@ GEM
       mime-types
       mimemagic (~> 0.3.0)
       terrapin (~> 0.6.0)
-    pg (1.1.4)
+    pg (0.17.1)
     pry (0.12.2)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
@@ -122,7 +122,7 @@ GEM
       rails-deprecated_sanitizer (>= 1.0.1)
     rails-html-sanitizer (1.1.0)
       loofah (~> 2.2, >= 2.2.2)
-    rails_12factor (0.0.3)
+    rails_12factor (0.0.2)
       rails_serve_static_assets
       rails_stdout_logging
     rails_serve_static_assets (0.0.5)
@@ -193,10 +193,10 @@ DEPENDENCIES
   jquery-rails
   mysql2 (~> 0.4.5)
   paperclip (~> 6.0.0)
-  pg
+  pg (= 0.17.1)
   pry
   rails (= 4.2.10)
-  rails_12factor
+  rails_12factor (= 0.0.2)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   spring
