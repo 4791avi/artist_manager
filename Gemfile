@@ -54,6 +54,6 @@ group :production do
 end
 
 
-gem 'devise', '~> 4.4'
+gem 'devise', '~> 4.7'
 gem 'pry'
 gem "paperclip", "~> 6.0.0"
